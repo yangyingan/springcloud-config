@@ -16,7 +16,7 @@ spring:
    username: root # 数据库用户名
    password: 123456 # 数据库连接密码
  application:
-   name: springcloud-config-product-client
+   name: springcloud-product-config-client
  profiles: dev
 
 logging:
@@ -28,7 +28,7 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@192.168.0.102:7001/eureka
   instance:
-    instance-id: springcloud-config-product-client
+    instance-id: springcloud-product-config-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
@@ -60,7 +60,7 @@ spring:
    username: root # 数据库用户名
    password: 123456 # 数据库连接密码
  application:
-   name: springcloud-config-product-client
+   name: springcloud-product-config-client
  profiles: beta
 
 logging:
@@ -72,13 +72,13 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@192.168.0.102:7002/eureka
   instance:
-    instance-id: springcloud-config-product-client
+    instance-id: springcloud-product-config-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: springcloud-config-product-client
+  app.name: springcloud-product-config-client
   company.name: enjoy
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
