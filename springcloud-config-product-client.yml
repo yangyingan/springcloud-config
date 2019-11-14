@@ -12,11 +12,11 @@ spring:
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
-   url: jdbc:mysql://192.168.0.102:3306/springcloud?serverTimezone=GMT%2B8 # 数据库连接地址
+   url: jdbc:mysql://192.168.0.102:3306/springcloud1?serverTimezone=GMT%2B8 # 数据库连接地址
    username: root # 数据库用户名
    password: root1234% # 数据库连接密码
  application:
-   name: springcloud-config-product-client
+   name: springcloud1-config-product-client
  profiles: dev
 
 logging:
@@ -28,13 +28,13 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@192.168.0.102:7001/eureka
   instance:
-    instance-id: springcloud-config-product-client
+    instance-id: springcloud1-config-product-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: springcloud-product
+  app.name: springcloud1-product
   company.name: enjoy
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
@@ -56,11 +56,11 @@ spring:
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
-   url: jdbc:mysql://192.168.0.102:3306/springcloud?serverTimezone=GMT%2B8 # 数据库连接地址
+   url: jdbc:mysql://192.168.0.102:3306/springcloud1?serverTimezone=GMT%2B8 # 数据库连接地址
    username: root # 数据库用户名
    password: root1234% # 数据库连接密码
  application:
-   name: springcloud-config-product-client
+   name: springcloud1-config-product-client
  profiles: beta
 
 logging:
@@ -72,13 +72,13 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@192.168.0.102:7002/eureka
   instance:
-    instance-id: springcloud-config-product-client
+    instance-id: springcloud1-config-product-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: springcloud-config-product-client
+  app.name: springcloud1-config-product-client
   company.name: enjoy
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
